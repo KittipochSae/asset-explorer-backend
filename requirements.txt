@@ -6,3 +6,4 @@ pandas
 numpy
 redis
 tqdm
+python-dotenv

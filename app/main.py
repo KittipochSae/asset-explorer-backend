@@ -1,7 +1,7 @@
 from fastapi import FastAPI, Response, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 import redis
-import config
+from config import config
 import utils
 
 import json
@@ -10,7 +10,7 @@ import numpy as np
 
 app = FastAPI()
 origins = [
-    "http://localhost",
+    config.FRONTEND_URL,
 ]
 app.add_middleware(
     CORSMiddleware,
