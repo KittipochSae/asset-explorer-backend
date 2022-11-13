@@ -2,7 +2,7 @@ from pydantic import BaseSettings
 
 
 class Settings(BaseSettings):
-    FRONTEND_URL: str
+    FRONTEND_URL = "http://localhost:3000"
     left = 100.3
     right = 101.0
     top = 14.0
